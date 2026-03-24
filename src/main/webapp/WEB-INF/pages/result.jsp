@@ -32,6 +32,19 @@
         <td>Experience</td>
         <td>${experience}</td>
     </tr>
+    <tr>
+        <td>Location</td>
+        <td>${location}</td>
+    </tr>
+
+    <tr>
+        <td>WeatherTemp</td>
+        <td>${temp}</td>
+    </tr>
+    <tr>
+        <td>WeatherLocation</td>
+        <td>${Location}</td>
+    </tr>
 </table>
 </body>
 </html>

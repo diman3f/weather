@@ -1,9 +1,5 @@
-package com.diman3f.weather.controller;
+package com.diman3f.weather.model;
 
-import com.diman3f.weather.model.Developer;
-import org.springframework.stereotype.Component;
-
-@Component
 public class Company {
     private Developer developer;
 
@@ -17,5 +13,12 @@ public class Company {
 
     public void setDeveloper(Developer developer) {
         this.developer = developer;
+    }
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "developer=" + developer +
+                '}';
     }
 }
