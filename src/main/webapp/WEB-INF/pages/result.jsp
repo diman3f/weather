@@ -43,7 +43,7 @@
     </tr>
     <tr>
         <td>WeatherLocation</td>
-        <td>${Location}</td>
+        <td>${location}</td>
     </tr>
 </table>
 </body>

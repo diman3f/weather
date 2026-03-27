@@ -1,5 +1,6 @@
 package com.diman3f.weather.config;
 
+import com.diman3f.weather.api.MockWeatherService;
 import com.diman3f.weather.dao.TestComponent;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -29,4 +30,5 @@ public class WebConfig implements WebMvcConfigurer {
         TestComponent testComponent = new TestComponent(10, 12, viewResolver());
         return testComponent;
     }
+
 }

@@ -1,12 +1,10 @@
 package com.diman3f.weather.controller;
 
-import com.diman3f.weather.dao.BaseDao;
+import com.diman3f.weather.dao.Dao;
 import com.diman3f.weather.dao.TestComponent;
-import com.diman3f.weather.dao.WeatherDaoImpl;
 import com.diman3f.weather.model.Developer;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Repository;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,10 +18,10 @@ public class DeveloperController {
     private Logger logger = Logger.getLogger(String.valueOf(DeveloperController.class));
 
 
-    private final BaseDao<String> weatherDao;
+    private final Dao<String> weatherDao;
     private final TestComponent component;
 
-    protected DeveloperController(BaseDao<String> weatherDao, TestComponent component) {
+    protected DeveloperController(Dao<String> weatherDao, TestComponent component) {
         this.weatherDao = weatherDao;
         this.component = component;
     }

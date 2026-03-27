@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class WeatherController {
 
-    private SearchWeatherService service;
+    private final SearchWeatherService service;
 
     public WeatherController(SearchWeatherService service) {
         this.service = service;
